@@ -300,11 +300,6 @@
                                         </value>
                                       </block>
                                     </value>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="multimedia_playwav" id="194">
-                                    <field name="WAV">pacman_c.wav</field>
                                     <next>
                                       <block type="oled_cleardisplay" id="69">
                                         <next>
@@ -517,7 +512,7 @@
                                       </block>
                                     </next>
                                   </block>
-                                </next>
+                                </statement>
                               </block>
                             </statement>
                           </block>
