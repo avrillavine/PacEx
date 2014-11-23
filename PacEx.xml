@@ -532,21 +532,6 @@
                             <field name="WAV">eating.wav</field>
                           </block>
                         </statement>
-                        <next>
-                          <block type="controls_whileUntil" id="317" inline="false">
-                            <field name="MODE">WHILE</field>
-                            <value name="NUMBER">
-                              <block type="sensor_button" id="318">
-                                <field name="OBJECT">LEFT</field>
-                              </block>
-                            </value>
-                            <statement name="DO">
-                              <block type="multimedia_playwav" id="319">
-                                <field name="WAV">eating.wav</field>
-                              </block>
-                            </statement>
-                          </block>
-                        </next>
                       </block>
                     </statement>
                   </block>
