@@ -524,7 +524,7 @@
                         <field name="MODE">WHILE</field>
                         <value name="NUMBER">
                           <block type="sensor_button" id="316">
-                            <field name="OBJECT">RIGHT</field>
+                            <field name="OBJECT">ENTER</field>
                           </block>
                         </value>
                         <statement name="DO">
