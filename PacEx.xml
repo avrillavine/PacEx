@@ -381,8 +381,8 @@
                                                                           </block>
                                                                         </value>
                                                                         <statement name="DO0">
-                                                                          <block type="multimedia_playwav" id="167">
-                                                                            <field name="WAV">eating.wav</field>
+                                                                          <block type="multimedia_playwav" id="171">
+                                                                            <field name="WAV">PacManDi.wav</field>
                                                                             <next>
                                                                               <block type="oled_cleardisplay" id="90">
                                                                                 <next>
