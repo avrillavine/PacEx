@@ -519,6 +519,11 @@
                         </next>
                       </block>
                     </statement>
+                    <statement name="ELSE">
+                      <block type="multimedia_playwav" id="194">
+                        <field name="WAV">pacman_c.wav</field>
+                      </block>
+                    </statement>
                   </block>
                 </next>
               </block>
