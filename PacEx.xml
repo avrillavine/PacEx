@@ -3,15 +3,15 @@
     <field name="VAR">value</field>
     <value name="VALUE">
       <block type="math_arithmetic" id="203" inline="true">
-        <field name="OP">ADD</field>
+        <field name="OP">MULTIPLY</field>
         <value name="A">
           <block type="math_number" id="191">
-            <field name="NUM">1</field>
+            <field name="NUM">2</field>
           </block>
         </value>
         <value name="B">
           <block type="math_number" id="204">
-            <field name="NUM">1</field>
+            <field name="NUM">10</field>
           </block>
         </value>
       </block>
@@ -55,6 +55,7 @@
                         <field name="OBJECT">RECT</field>
                         <next>
                           <block type="controls_if" id="116" inline="false">
+                            <mutation elseif="1"></mutation>
                             <value name="IF0">
                               <block type="sensor_button" id="117">
                                 <field name="OBJECT">UP</field>
@@ -146,6 +147,39 @@
                                     </next>
                                   </block>
                                 </next>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="sensor_button" id="391">
+                                <field name="OBJECT">DOWN</field>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="controls_whileUntil" id="392" inline="false">
+                                <field name="MODE">UNTIL</field>
+                                <value name="NUMBER">
+                                  <block type="sensor_button" id="393">
+                                    <field name="OBJECT">UP</field>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="oled_cleardisplay" id="394">
+                                    <next>
+                                      <block type="oled_setcursor" id="395" inline="true">
+                                        <value name="STARTX">
+                                          <block type="variables_get" id="396">
+                                            <field name="VAR">value</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="variables_get" id="397">
+                                            <field name="VAR">value</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
                               </block>
                             </statement>
                           </block>
