@@ -186,23 +186,27 @@
                                   </block>
                                 </statement>
                                 <statement name="ELSE">
-                                  <block type="variables_set" id="91" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="logic_compare" id="95" inline="true">
-                                        <field name="OP">EQ</field>
-                                        <value name="A">
-                                          <block type="variables_get" id="96">
-                                            <field name="VAR">value</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="97">
-                                            <field name="NUM">10</field>
+                                  <block type="oled_cleardisplay" id="98">
+                                    <next>
+                                      <block type="variables_set" id="91" inline="true">
+                                        <field name="VAR">value</field>
+                                        <value name="VALUE">
+                                          <block type="logic_compare" id="95" inline="true">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="96">
+                                                <field name="VAR">value</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="97">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
-                                    </value>
+                                    </next>
                                   </block>
                                 </statement>
                                 <next>
