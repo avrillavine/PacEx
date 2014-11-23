@@ -147,7 +147,7 @@
                               <block type="controls_if" id="38" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="39" inline="true">
-                                    <field name="OP">LTE</field>
+                                    <field name="OP">LT</field>
                                     <value name="A">
                                       <block type="variables_get" id="40">
                                         <field name="VAR">value</field>
@@ -155,7 +155,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="41">
-                                        <field name="NUM">10</field>
+                                        <field name="NUM">30</field>
                                       </block>
                                     </value>
                                   </block>
@@ -269,7 +269,7 @@
                               <block type="controls_if" id="111" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="112" inline="true">
-                                    <field name="OP">LTE</field>
+                                    <field name="OP">EQ</field>
                                     <value name="A">
                                       <block type="variables_get" id="113">
                                         <field name="VAR">value</field>
@@ -277,7 +277,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="114">
-                                        <field name="NUM">10</field>
+                                        <field name="NUM">30</field>
                                       </block>
                                     </value>
                                   </block>
