@@ -3,7 +3,7 @@
     <field name="VAR">value</field>
     <value name="VALUE">
       <block type="math_arithmetic" id="203" inline="true">
-        <field name="OP">MULTIPLY</field>
+        <field name="OP">ADD</field>
         <value name="A">
           <block type="math_number" id="191">
             <field name="NUM">2</field>
@@ -39,104 +39,85 @@
                   </block>
                 </value>
                 <next>
-                  <block type="oled_setend" id="247" inline="true">
-                    <value name="ENDX">
-                      <block type="math_number" id="248">
-                        <field name="NUM">5</field>
+                  <block type="controls_if" id="116" inline="false">
+                    <mutation elseif="1"></mutation>
+                    <value name="IF0">
+                      <block type="sensor_button" id="117">
+                        <field name="OBJECT">UP</field>
                       </block>
                     </value>
-                    <value name="ENDY">
-                      <block type="math_number" id="249">
-                        <field name="NUM">5</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="oled_linerect" id="220">
-                        <field name="OBJECT">RECT</field>
+                    <statement name="DO0">
+                      <block type="oled_cleardisplay" id="183">
                         <next>
-                          <block type="controls_if" id="116" inline="false">
-                            <mutation elseif="1"></mutation>
-                            <value name="IF0">
-                              <block type="sensor_button" id="117">
-                                <field name="OBJECT">UP</field>
+                          <block type="oled_setcursor" id="185" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="186">
+                                <field name="NUM">1</field>
                               </block>
                             </value>
-                            <statement name="DO0">
-                              <block type="oled_cleardisplay" id="183">
+                            <value name="STARTY">
+                              <block type="math_number" id="187">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="multimedia_displaybmp" id="347">
+                                <field name="BMP">pac1.bmp</field>
                                 <next>
-                                  <block type="oled_setcursor" id="185" inline="true">
+                                  <block type="oled_setcursor" id="280" inline="true">
                                     <value name="STARTX">
-                                      <block type="math_number" id="186">
-                                        <field name="NUM">1</field>
+                                      <block type="variables_get" id="292">
+                                        <field name="VAR">value</field>
                                       </block>
                                     </value>
                                     <value name="STARTY">
-                                      <block type="math_number" id="187">
-                                        <field name="NUM">1</field>
+                                      <block type="variables_get" id="293">
+                                        <field name="VAR">value</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="multimedia_displaybmp" id="347">
-                                        <field name="BMP">pac1.bmp</field>
+                                      <block type="oled_cleardisplay" id="352">
                                         <next>
-                                          <block type="oled_setcursor" id="280" inline="true">
-                                            <value name="STARTX">
-                                              <block type="variables_get" id="292">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
-                                            <value name="STARTY">
-                                              <block type="variables_get" id="293">
-                                                <field name="VAR">value</field>
-                                              </block>
-                                            </value>
+                                          <block type="multimedia_displaybmp" id="348">
+                                            <field name="BMP">pac2.bmp</field>
                                             <next>
-                                              <block type="oled_cleardisplay" id="352">
+                                              <block type="oled_setcursor" id="353" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="variables_get" id="354">
+                                                    <field name="VAR">value</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="variables_get" id="355">
+                                                    <field name="VAR">value</field>
+                                                  </block>
+                                                </value>
                                                 <next>
-                                                  <block type="multimedia_displaybmp" id="348">
-                                                    <field name="BMP">pac2.bmp</field>
-                                                    <next>
-                                                      <block type="oled_setcursor" id="353" inline="true">
-                                                        <value name="STARTX">
-                                                          <block type="variables_get" id="354">
-                                                            <field name="VAR">value</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="STARTY">
-                                                          <block type="variables_get" id="355">
-                                                            <field name="VAR">value</field>
-                                                          </block>
-                                                        </value>
+                                                  <block type="controls_whileUntil" id="67" inline="false">
+                                                    <field name="MODE">UNTIL</field>
+                                                    <value name="NUMBER">
+                                                      <block type="sensor_button" id="118">
+                                                        <field name="OBJECT">DOWN</field>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO">
+                                                      <block type="oled_cleardisplay" id="184">
                                                         <next>
-                                                          <block type="controls_whileUntil" id="67" inline="false">
-                                                            <field name="MODE">UNTIL</field>
-                                                            <value name="NUMBER">
-                                                              <block type="sensor_button" id="118">
-                                                                <field name="OBJECT">DOWN</field>
+                                                          <block type="oled_setcursor" id="384" inline="true">
+                                                            <value name="STARTX">
+                                                              <block type="variables_get" id="385">
+                                                                <field name="VAR">value</field>
                                                               </block>
                                                             </value>
-                                                            <statement name="DO">
-                                                              <block type="oled_cleardisplay" id="184">
-                                                                <next>
-                                                                  <block type="oled_setcursor" id="384" inline="true">
-                                                                    <value name="STARTX">
-                                                                      <block type="variables_get" id="385">
-                                                                        <field name="VAR">value</field>
-                                                                      </block>
-                                                                    </value>
-                                                                    <value name="STARTY">
-                                                                      <block type="variables_get" id="386">
-                                                                        <field name="VAR">value</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </next>
+                                                            <value name="STARTY">
+                                                              <block type="variables_get" id="386">
+                                                                <field name="VAR">value</field>
                                                               </block>
-                                                            </statement>
+                                                            </value>
                                                           </block>
                                                         </next>
                                                       </block>
-                                                    </next>
+                                                    </statement>
                                                   </block>
                                                 </next>
                                               </block>
@@ -148,44 +129,44 @@
                                   </block>
                                 </next>
                               </block>
-                            </statement>
-                            <value name="IF1">
-                              <block type="sensor_button" id="391">
-                                <field name="OBJECT">DOWN</field>
-                              </block>
-                            </value>
-                            <statement name="DO1">
-                              <block type="controls_whileUntil" id="392" inline="false">
-                                <field name="MODE">UNTIL</field>
-                                <value name="NUMBER">
-                                  <block type="sensor_button" id="393">
-                                    <field name="OBJECT">UP</field>
-                                  </block>
-                                </value>
-                                <statement name="DO">
-                                  <block type="oled_cleardisplay" id="394">
-                                    <next>
-                                      <block type="oled_setcursor" id="395" inline="true">
-                                        <value name="STARTX">
-                                          <block type="variables_get" id="396">
-                                            <field name="VAR">value</field>
-                                          </block>
-                                        </value>
-                                        <value name="STARTY">
-                                          <block type="variables_get" id="397">
-                                            <field name="VAR">value</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </statement>
-                              </block>
-                            </statement>
+                            </next>
                           </block>
                         </next>
                       </block>
-                    </next>
+                    </statement>
+                    <value name="IF1">
+                      <block type="sensor_button" id="391">
+                        <field name="OBJECT">DOWN</field>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="controls_whileUntil" id="392" inline="false">
+                        <field name="MODE">UNTIL</field>
+                        <value name="NUMBER">
+                          <block type="sensor_button" id="393">
+                            <field name="OBJECT">UP</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="oled_cleardisplay" id="394">
+                            <next>
+                              <block type="oled_setcursor" id="395" inline="true">
+                                <value name="STARTX">
+                                  <block type="variables_get" id="396">
+                                    <field name="VAR">value</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="variables_get" id="397">
+                                    <field name="VAR">value</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
                   </block>
                 </next>
               </block>
