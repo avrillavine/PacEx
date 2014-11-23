@@ -161,7 +161,7 @@
                               <block type="oled_setcursor" id="542" inline="true">
                                 <value name="STARTX">
                                   <block type="math_number" id="543">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                                 <value name="STARTY">
@@ -176,7 +176,7 @@
                                       <block type="oled_setcursor" id="546" inline="true">
                                         <value name="STARTX">
                                           <block type="math_number" id="547">
-                                            <field name="NUM">2</field>
+                                            <field name="NUM">-20</field>
                                           </block>
                                         </value>
                                         <value name="STARTY">
@@ -200,7 +200,7 @@
                                                       <block type="oled_setcursor" id="553" inline="true">
                                                         <value name="STARTX">
                                                           <block type="math_number" id="554">
-                                                            <field name="NUM">2</field>
+                                                            <field name="NUM">-20</field>
                                                           </block>
                                                         </value>
                                                         <value name="STARTY">
