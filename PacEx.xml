@@ -350,6 +350,25 @@
                                                                     <field name="NUM">90</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="controls_if" id="83" inline="false">
+                                                                    <value name="IF0">
+                                                                      <block type="logic_compare" id="84" inline="true">
+                                                                        <field name="OP">EQ</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="85">
+                                                                            <field name="VAR">value</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="math_number" id="86">
+                                                                            <field name="NUM">1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
