@@ -269,7 +269,7 @@
                               <block type="controls_if" id="61" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="62" inline="true">
-                                    <field name="OP">EQ</field>
+                                    <field name="OP">GTE</field>
                                     <value name="A">
                                       <block type="variables_get" id="63">
                                         <field name="VAR">value</field>
@@ -306,7 +306,7 @@
                                   <block type="oled_cleardisplay" id="69">
                                     <next>
                                       <block type="multimedia_displaybmp" id="70">
-                                        <field name="BMP">pac1.bmp</field>
+                                        <field name="BMP">pac8.bmp</field>
                                         <next>
                                           <block type="oled_setcursor" id="71" inline="true">
                                             <value name="STARTX">
