@@ -360,7 +360,7 @@
                                                                           <block type="controls_if" id="85" inline="false">
                                                                             <value name="IF0">
                                                                               <block type="logic_compare" id="86" inline="true">
-                                                                                <field name="OP">EQ</field>
+                                                                                <field name="OP">LTE</field>
                                                                                 <value name="A">
                                                                                   <block type="variables_get" id="87">
                                                                                     <field name="VAR">value</field>
