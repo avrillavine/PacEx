@@ -451,17 +451,7 @@
                                                                                                                                       </block>
                                                                                                                                     </value>
                                                                                                                                     <next>
-                                                                                                                                      <block type="oled_cleardisplay" id="112">
-                                                                                                                                        <next>
-                                                                                                                                          <block type="robot_delay" id="113" inline="true">
-                                                                                                                                            <value name="DELAY">
-                                                                                                                                              <block type="math_number" id="114">
-                                                                                                                                                <field name="NUM">500</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
+                                                                                                                                      <block type="oled_cleardisplay" id="112"></block>
                                                                                                                                     </next>
                                                                                                                                   </block>
                                                                                                                                 </next>
