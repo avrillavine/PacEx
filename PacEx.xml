@@ -137,7 +137,7 @@
                       <block type="oled_cleardisplay" id="32">
                         <next>
                           <block type="controls_whileUntil" id="33" inline="false">
-                            <field name="MODE">WHILE</field>
+                            <field name="MODE">UNTIL</field>
                             <value name="NUMBER">
                               <block type="sensor_button" id="34">
                                 <field name="OBJECT">LEFT</field>
