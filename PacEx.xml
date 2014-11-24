@@ -374,9 +374,9 @@
                                                                               </block>
                                                                             </value>
                                                                             <statement name="DO0">
-                                                                              <block type="oled_cleardisplay" id="90">
+                                                                              <block type="oled_cleardisplay" id="89">
                                                                                 <next>
-                                                                                  <block type="multimedia_playwav" id="171">
+                                                                                  <block type="multimedia_playwav" id="90">
                                                                                     <field name="WAV">PacManDi.wav</field>
                                                                                     <next>
                                                                                       <block type="multimedia_displaybmp" id="91">
