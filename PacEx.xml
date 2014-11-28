@@ -47,90 +47,154 @@
                               </block>
                             </value>
                             <statement name="DO">
-                              <block type="controls_if" id="14" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_compare" id="15" inline="true">
-                                    <field name="OP">LT</field>
-                                    <value name="A">
-                                      <block type="variables_get" id="16">
-                                        <field name="VAR">value</field>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="17">
-                                        <field name="NUM">30</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="variables_set" id="18" inline="true">
-                                    <field name="VAR">value</field>
-                                    <value name="VALUE">
-                                      <block type="math_arithmetic" id="19" inline="true">
-                                        <field name="OP">ADD</field>
-                                        <value name="A">
-                                          <block type="variables_get" id="20">
-                                            <field name="VAR">value</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="21">
-                                            <field name="NUM">2</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
+                              <block type="oled_cleardisplay" id="62">
+                                <next>
+                                  <block type="multimedia_displaybmp" id="63">
+                                    <field name="BMP">pac1.bmp</field>
                                     <next>
-                                      <block type="oled_cleardisplay" id="22">
+                                      <block type="oled_setcursor" id="64" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="76">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="66">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
                                         <next>
-                                          <block type="multimedia_displaybmp" id="23">
-                                            <field name="BMP">pac1.bmp</field>
+                                          <block type="robot_delay" id="67" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="68">
+                                                <field name="NUM">90</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="oled_setcursor" id="24" inline="true">
-                                                <value name="STARTX">
-                                                  <block type="variables_get" id="25">
-                                                    <field name="VAR">value</field>
-                                                  </block>
-                                                </value>
-                                                <value name="STARTY">
-                                                  <block type="math_number" id="26">
-                                                    <field name="NUM">1</field>
-                                                  </block>
-                                                </value>
+                                              <block type="oled_cleardisplay" id="69">
                                                 <next>
-                                                  <block type="robot_delay" id="27" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="28">
-                                                        <field name="NUM">90</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="multimedia_displaybmp" id="70">
+                                                    <field name="BMP">pac2.bmp</field>
                                                     <next>
-                                                      <block type="oled_cleardisplay" id="29">
+                                                      <block type="oled_setcursor" id="71" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="math_number" id="77">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="math_number" id="73">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
-                                                          <block type="multimedia_displaybmp" id="30">
-                                                            <field name="BMP">pac2.bmp</field>
+                                                          <block type="robot_delay" id="74" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="75">
+                                                                <field name="NUM">90</field>
+                                                              </block>
+                                                            </value>
                                                             <next>
-                                                              <block type="oled_setcursor" id="31" inline="true">
-                                                                <value name="STARTX">
-                                                                  <block type="variables_get" id="32">
-                                                                    <field name="VAR">value</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="STARTY">
-                                                                  <block type="math_number" id="33">
-                                                                    <field name="NUM">1</field>
-                                                                  </block>
-                                                                </value>
-                                                                <next>
-                                                                  <block type="robot_delay" id="34" inline="true">
-                                                                    <value name="DELAY">
-                                                                      <block type="math_number" id="35">
-                                                                        <field name="NUM">90</field>
+                                                              <block type="controls_if" id="14" inline="false">
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="15" inline="true">
+                                                                    <field name="OP">LT</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="16">
+                                                                        <field name="VAR">value</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="17">
+                                                                        <field name="NUM">30</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
-                                                                </next>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="variables_set" id="18" inline="true">
+                                                                    <field name="VAR">value</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="math_arithmetic" id="19" inline="true">
+                                                                        <field name="OP">ADD</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="20">
+                                                                            <field name="VAR">value</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="math_number" id="21">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="oled_cleardisplay" id="22">
+                                                                        <next>
+                                                                          <block type="multimedia_displaybmp" id="23">
+                                                                            <field name="BMP">pac1.bmp</field>
+                                                                            <next>
+                                                                              <block type="oled_setcursor" id="24" inline="true">
+                                                                                <value name="STARTX">
+                                                                                  <block type="variables_get" id="25">
+                                                                                    <field name="VAR">value</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="STARTY">
+                                                                                  <block type="math_number" id="26">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="robot_delay" id="27" inline="true">
+                                                                                    <value name="DELAY">
+                                                                                      <block type="math_number" id="28">
+                                                                                        <field name="NUM">90</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="oled_cleardisplay" id="29">
+                                                                                        <next>
+                                                                                          <block type="multimedia_displaybmp" id="30">
+                                                                                            <field name="BMP">pac2.bmp</field>
+                                                                                            <next>
+                                                                                              <block type="oled_setcursor" id="31" inline="true">
+                                                                                                <value name="STARTX">
+                                                                                                  <block type="variables_get" id="32">
+                                                                                                    <field name="VAR">value</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="STARTY">
+                                                                                                  <block type="math_number" id="33">
+                                                                                                    <field name="NUM">1</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="robot_delay" id="34" inline="true">
+                                                                                                    <value name="DELAY">
+                                                                                                      <block type="math_number" id="35">
+                                                                                                        <field name="NUM">90</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
                                                               </block>
                                                             </next>
                                                           </block>
@@ -146,7 +210,7 @@
                                       </block>
                                     </next>
                                   </block>
-                                </statement>
+                                </next>
                               </block>
                             </statement>
                           </block>
