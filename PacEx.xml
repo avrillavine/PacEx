@@ -413,7 +413,7 @@
                                                             <field name="MODE">UNTIL</field>
                                                             <value name="NUMBER">
                                                               <block type="logic_compare" id="337" inline="true">
-                                                                <field name="OP">EQ</field>
+                                                                <field name="OP">GTE</field>
                                                                 <value name="A">
                                                                   <block type="variables_get" id="338">
                                                                     <field name="VAR">value</field>
