@@ -245,7 +245,7 @@
                                       <block type="oled_cleardisplay" id="145">
                                         <next>
                                           <block type="multimedia_displaybmp" id="146">
-                                            <field name="BMP">pac8.bmp</field>
+                                            <field name="BMP">pac1.bmp</field>
                                             <next>
                                               <block type="oled_setcursor" id="147" inline="true">
                                                 <value name="STARTX">
@@ -312,7 +312,7 @@
                                                                   <block type="oled_cleardisplay" id="106">
                                                                     <next>
                                                                       <block type="multimedia_displaybmp" id="107">
-                                                                        <field name="BMP">pac1.bmp</field>
+                                                                        <field name="BMP">pac8.bmp</field>
                                                                         <next>
                                                                           <block type="oled_setcursor" id="108" inline="true">
                                                                             <value name="STARTX">
@@ -336,7 +336,7 @@
                                                                                   <block type="oled_cleardisplay" id="113">
                                                                                     <next>
                                                                                       <block type="multimedia_displaybmp" id="114">
-                                                                                        <field name="BMP">pac2.bmp</field>
+                                                                                        <field name="BMP">pac1.bmp</field>
                                                                                         <next>
                                                                                           <block type="oled_setcursor" id="115" inline="true">
                                                                                             <value name="STARTX">
