@@ -394,39 +394,29 @@
                                                           </block>
                                                         </statement>
                                                         <value name="IF1">
-                                                          <block type="logic_compare" id="310" inline="true">
-                                                            <field name="OP">EQ</field>
-                                                            <value name="A">
-                                                              <block type="variables_get" id="311">
-                                                                <field name="VAR">value</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="312">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
+                                                          <block type="sensor_button" id="340">
+                                                            <field name="OBJECT">UP</field>
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
-                                                          <block type="controls_whileUntil" id="336" inline="false">
-                                                            <field name="MODE">UNTIL</field>
-                                                            <value name="NUMBER">
-                                                              <block type="logic_compare" id="337" inline="true">
-                                                                <field name="OP">GTE</field>
+                                                          <block type="variables_set" id="341" inline="true">
+                                                            <field name="VAR">value</field>
+                                                            <value name="VALUE">
+                                                              <block type="logic_compare" id="310" inline="true">
+                                                                <field name="OP">EQ</field>
                                                                 <value name="A">
-                                                                  <block type="variables_get" id="338">
+                                                                  <block type="variables_get" id="311">
                                                                     <field name="VAR">value</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="B">
-                                                                  <block type="math_number" id="339">
+                                                                  <block type="math_number" id="312">
                                                                     <field name="NUM">1</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
-                                                            <statement name="DO">
+                                                            <next>
                                                               <block type="oled_cleardisplay" id="181">
                                                                 <next>
                                                                   <block type="multimedia_displaybmp" id="182">
@@ -548,7 +538,7 @@
                                                                   </block>
                                                                 </next>
                                                               </block>
-                                                            </statement>
+                                                            </next>
                                                           </block>
                                                         </statement>
                                                       </block>
