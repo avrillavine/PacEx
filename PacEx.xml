@@ -383,7 +383,7 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="225">
-                                                                <field name="NUM">30</field>
+                                                                <field name="NUM">1</field>
                                                               </block>
                                                             </value>
                                                           </block>
