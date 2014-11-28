@@ -399,9 +399,8 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
-                                                          <block type="variables_set" id="341" inline="true">
-                                                            <field name="VAR">value</field>
-                                                            <value name="VALUE">
+                                                          <block type="controls_if" id="356" inline="false">
+                                                            <value name="IF0">
                                                               <block type="logic_compare" id="310" inline="true">
                                                                 <field name="OP">EQ</field>
                                                                 <value name="A">
@@ -416,7 +415,7 @@
                                                                 </value>
                                                               </block>
                                                             </value>
-                                                            <next>
+                                                            <statement name="DO0">
                                                               <block type="oled_cleardisplay" id="181">
                                                                 <next>
                                                                   <block type="multimedia_displaybmp" id="182">
@@ -538,7 +537,7 @@
                                                                   </block>
                                                                 </next>
                                                               </block>
-                                                            </next>
+                                                            </statement>
                                                           </block>
                                                         </statement>
                                                       </block>
