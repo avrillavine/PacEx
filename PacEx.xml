@@ -245,7 +245,7 @@
                                       <block type="oled_cleardisplay" id="145">
                                         <next>
                                           <block type="multimedia_displaybmp" id="146">
-                                            <field name="BMP">pac1.bmp</field>
+                                            <field name="BMP">pac9.bmp</field>
                                             <next>
                                               <block type="oled_setcursor" id="147" inline="true">
                                                 <value name="STARTX">
@@ -336,7 +336,7 @@
                                                                                   <block type="oled_cleardisplay" id="113">
                                                                                     <next>
                                                                                       <block type="multimedia_displaybmp" id="114">
-                                                                                        <field name="BMP">pac1.bmp</field>
+                                                                                        <field name="BMP">pac9.bmp</field>
                                                                                         <next>
                                                                                           <block type="oled_setcursor" id="115" inline="true">
                                                                                             <value name="STARTX">
