@@ -265,14 +265,13 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="controls_whileUntil" id="96" inline="false">
-                                                    <field name="MODE">WHILE</field>
-                                                    <value name="NUMBER">
+                                                  <block type="controls_if" id="259" inline="false">
+                                                    <value name="IF0">
                                                       <block type="sensor_button" id="97">
                                                         <field name="OBJECT">UP</field>
                                                       </block>
                                                     </value>
-                                                    <statement name="DO">
+                                                    <statement name="DO0">
                                                       <block type="controls_if" id="98" inline="false">
                                                         <mutation elseif="1"></mutation>
                                                         <value name="IF0">
